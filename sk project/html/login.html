@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+
+    </script>
+  </head>
+
+  <body>
+  <form class="loginForm" action="index.html" method="post">
+    <h1>Selamat Datang Ke</h1>
+    <h2> Violecar </h2>
+
+    <div class="txt">
+      <input type="text" title="Id Pengguna">
+      <span data-placeholder="Id Pengguna" ></span>
+    </div>
+
+    <div class="txt">
+      <input type="password" title="Kata Laluan">
+      <span data-placeholder="Kata Laluan" ></span>
+    </div>
+
+    <input type="submit" class="btn" value="log masuk" title="tekan untuk log masuk">
+
+    </form>
+
+    <script type="text/javascript">
+    $(".txt input").on("focus",function(){
+      $(this).addClass("focus");
+    });
+
+    $(".txt input").on("blur",function(){
+      if($(this).val() == "")
+      $(this).removeClass("focus");
+    });
+
+    </script>
+
+
+  </body>
+</html>
